@@ -138,6 +138,16 @@ body {
   font-size: 3vw;
 }
 
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
+.about-img img{
+  width: 100%;
+  height: auto;
+}
+
 .column-row .container-left {
   display: flex;
   flex-direction: row;
@@ -183,10 +193,7 @@ body {
 }
 
 
-#about img {
-    width: 100%;
-    height: auto;
-}
+
 
 .container-box {
     background-color: var(--third);
