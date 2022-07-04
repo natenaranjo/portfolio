@@ -7,17 +7,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body id="top">
-        <div class="navbar" id="main-navbar">
-            <div class="navbar-icon">
-                <a href="#top" class="active">.Dev_Nate()</a>
-            </div>
-            <div clas="navbar-links">
-                <a href="#about">.About()</a>
-                <a href="#projects">.Projects()</a>
-                <a href="#contact">.Contact()</a>
-                <a href="javascript:void(0);" class="icon" onclick="navBar()">
-                <i class="fa fa-bars"></i></a>
-            </div>
+        <nav>
+            <ul class="menu">
+              <li class="logo"><a href="#top">.Nate_Dev()</a></li>
+              <li class="item"><a href="#about">.About()</a></li>
+              <li class="item"><a href="#projects">.Projects()</a></li>
+              <li class="item"><a href="#contact">.Contact()</a></li>
+              <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </nav>
         </div>
         <section id="header">
             <div class="container-fluid">
@@ -57,24 +55,44 @@
                 <h2>Projects</h2>
                 <div class="row">
                     <div class="column-row">
-                        <div class="container-left reveal fade-left">
+                        <div class="container-left reveal fade-left grow">
                             <div class="box-text-left">
-                                <h3>Youtube</h3>
+                                <h3>Github - Blog</h3>
+                                <p>Working on a Blog Page to record my progress of learning different coding languages.</p>
                             </div>
                             <div class="box-image-left">
-                                <img src="./assets/img/coding.webp">
+                                <a href="https://natenaranjo.github.io/">
+                                    <img src="./assets/img/github.webp">
+                                </a>
                             </div>
                         </div> 
                     </div>                   
                 </div>
                 <div class="row">
                     <div class="column-row">
-                        <div class="container-right reveal fade-right">
+                        <div class="container-right reveal fade-right grow">
                             <div class="box-text-right">
                                 <h3>Youtube</h3>
                             </div>
                             <div class="box-image-right">
-                                <img src="./assets/img/coding.webp">
+                                <a href="https://www.youtube.com/channel/UCw--32S_faF7ImPkRbnDFBQ">
+                                    <img src="./assets/img/youtube.wep.png">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="column-row">
+                        <div class="container-left reveal fade-left grow">
+                            <div class="box-text-left">
+                                <h3>Twitter</h3>
+                                <p>Communicating with others to update on progress of 100 days of coding challenge.  Learning to social network with other like minded individuals to expand network.  Give and recieve coding challenge, work on team projects.</p>
+                            </div>
+                            <div class="box-image-left">
+                                <a href="https://twitter.com/NathanNaranjo12">
+                                    <img src="./assets/img/twitter.webp">
+                                </a>
                             </div>
                         </div> 
                     </div>                   
@@ -83,9 +101,10 @@
         </section>
         <section id="contact">
             <div class="container-fluid">
-                <div class="row">
+                <h2>Let's creating something beautiful!</h2>
+                <div class="row" id="message">
                     <div class="column">
-                        <form class="message" action"">
+                        <form action="">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name">
                             <label for="email">Email:</label>
@@ -97,10 +116,12 @@
                         </form>
                     </div>
                     <div class="column">
-                        <a href="https://www.linkedin.com/in/natenaranjo/" class="fa fa-linkedin-square"> - Linkedin</a> 
-                        <a href="https://github.com/natenaranjo" class="fa fa-github-square"> - GitHub</a>                            
-                        <a href="https://twitter.com/NathanNaranjo12" class="fa fa-twitter-square"> - Twitter</a>
-                        <a href="https://www.youtube.com/channel/UCw--32S_faF7ImPkRbnDFBQ" class="fa fa-youtube-square"> - Youtube</a> 
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/natenaranjo/" class="fa fa-linkedin-square"><div class="social-text">Linkedin</div></a> 
+                            <a href="https://github.com/natenaranjo" class="fa fa-github-square"><div class="social-text">GitHub</div></a>                            
+                            <a href="https://twitter.com/NathanNaranjo12" class="fa fa-twitter-square"><div class="social-text">Twitter</div></a>
+                            <a href="https://www.youtube.com/channel/UCw--32S_faF7ImPkRbnDFBQ" class="fa fa-youtube-square"><div class="social-text">Youtube</div></a> 
+                        </div>
                     </div>
                 </div>
             </div>

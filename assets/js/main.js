@@ -1,12 +1,3 @@
-function navBar() {
-    var x = document.getElementById("main-navbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
 // Animation to make object appear when scrolling through the page.
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -14,7 +5,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 100;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -25,3 +16,31 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+// Responsive nav when screen size shrinks.
+  const toggle = document.querySelector(".toggle");
+  const menu = document.querySelector(".menu");
+  const items = document.querySelectorAll(".item");
+  
+  /* Toggle mobile menu */
+  function toggleMenu() {
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+      toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    } else {
+      menu.classList.add("active");
+      toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+    }
+  }
+  
+  /* Event Listeners */
+  toggle.addEventListener("click", toggleMenu, false);
+  for (let item of items) {
+    if (item.querySelector(".submenu")) {
+      item.addEventListener("click", toggleItem, false);
+    }
+    item.addEventListener("keypress", toggleItem, false);
+  }
+  document.addEventListener("click", closeSubmenu, false);
+  
+  Resources
