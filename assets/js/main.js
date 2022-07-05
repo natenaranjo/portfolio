@@ -37,10 +37,9 @@ function reveal() {
   toggle.addEventListener("click", toggleMenu, false);
   for (let item of items) {
     if (item.querySelector(".submenu")) {
-      item.addEventListener("click", toggleItem, false);
+      item.addEventListener("click", toggle.Item, false);
     }
-    item.addEventListener("keypress", toggleItem, false);
+    item.addEventListener("keypress", toggle.Item, false);
   }
-  document.addEventListener("click", closeSubmenu, false);
   
-  Resources
+  document.addEventListener("click", close.Submenu, false); 
