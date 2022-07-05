@@ -1,4 +1,4 @@
-![Screenshot](/assets/img/screenshot.png)
+![Screenshot](/assets/img/screenshot.jpg)
 
 ---
 ## Live Link
