@@ -9,11 +9,11 @@
 ### Requirements:
 #### Needs to have:
    - [x] Developer's Name
-   - [x] recent Photo
-    - [x] Links to the sections
-    - [x] About
-    - [x] Work
-    - [x] Contact Form
+   - [x] Recent Photo
+   - [x] Links to the sections
+   - [x] About
+   - [x] Work
+   - [x] Contact Form
    - [x] When clicking on a link the UI scrolls down to that section.
    - [] Applications Image appears larger in size than the other's.
    - [] Clicking on images of the application taken to that deployed application.
